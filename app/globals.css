@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f4f0e8; color: #171717; font-family: Georgia, 'Times New Roman', serif; }
+a { color: inherit; text-decoration: none; }
+main { max-width: 1180px; margin: auto; padding: 0 28px; }
+.masthead { text-align: center; padding: 22px 0 0; }
+.topline { display: flex; justify-content: space-between; border-bottom: 1px solid #171717; padding-bottom: 9px; font: 11px Arial, sans-serif; letter-spacing: 2px; }
+.masthead h1 { font-size: clamp(42px, 8vw, 92px); line-height: .9; letter-spacing: -4px; margin: 34px 0 12px; }
+.tagline { font: 12px Arial, sans-serif; letter-spacing: 4px; margin: 0 0 25px; }
+nav { display: flex; justify-content: center; gap: 34px; border-top: 1px solid #171717; border-bottom: 3px double #171717; padding: 12px 0; font: 700 12px Arial, sans-serif; text-transform: uppercase; letter-spacing: .8px; }
+.hero { display: grid; grid-template-columns: 1.25fr .75fr; gap: 35px; padding: 55px 0 48px; }
+.hero-copy { display: flex; flex-direction: column; justify-content: center; }
+.eyebrow { font: 700 10px Arial, sans-serif; letter-spacing: 2px; margin: 0 0 14px; }
+.hero h2 { font-size: clamp(42px, 6vw, 70px); line-height: .95; margin: 0 0 20px; letter-spacing: -2px; }
+.hero-copy > p:not(.eyebrow) { max-width: 650px; font-size: 19px; line-height: 1.55; color: #49443d; }
+button { align-self: flex-start; margin-top: 15px; padding: 12px 18px; background: #171717; color: #f4f0e8; border: 0; font: 700 11px Arial, sans-serif; letter-spacing: 1.5px; cursor: pointer; }
+.hero-art, .card-image { background: #d9d0c1; display: grid; place-items: center; min-height: 390px; border: 1px solid #171717; position: relative; overflow: hidden; }
+.hero-art:before, .card-image:before { content: ''; position: absolute; width: 180%; height: 2px; background: #171717; transform: rotate(-35deg); opacity: .16; box-shadow: 0 45px #171717, 0 90px #171717, 0 135px #171717, 0 180px #171717, 0 225px #171717, 0 270px #171717, 0 315px #171717; }
+.hero-art span { font-size: 130px; font-weight: 900; letter-spacing: -12px; z-index: 1; }
+.rule { border-top: 3px double #171717; }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; margin: 28px 0 20px; border-bottom: 1px solid #171717; padding-bottom: 10px; }
+.section-heading h2 { margin: 0; font-size: 25px; }
+.section-heading span { font: 10px Arial, sans-serif; letter-spacing: 2px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 45px; }
+.card { border-bottom: 1px solid #171717; padding-bottom: 28px; }
+.card-image { min-height: 230px; margin-bottom: 22px; }
+.card-image span { z-index: 1; font: 900 54px Arial, sans-serif; letter-spacing: -4px; }
+.card h3 { font-size: 31px; line-height: 1.05; margin: 0 0 12px; }
+.card p:not(.eyebrow) { font-size: 16px; line-height: 1.5; color: #514b44; }
+.card small { font: 10px Arial, sans-serif; letter-spacing: 1px; }
+.newsletter { margin: 65px 0; border: 1px solid #171717; padding: 40px; text-align: center; }
+.newsletter h2 { font-size: 38px; max-width: 750px; margin: auto; line-height: 1.05; }
+.newsletter p:last-child { font-size: 16px; max-width: 650px; margin: 18px auto 0; line-height: 1.5; color: #514b44; }
+footer { border-top: 3px double #171717; padding: 20px 0 30px; display: flex; justify-content: space-between; font: 11px Arial, sans-serif; letter-spacing: 1px; }
+@media (max-width: 720px) { main { padding: 0 17px; } .topline { font-size: 8px; } .masthead h1 { letter-spacing: -2px; } nav { gap: 12px; font-size: 9px; flex-wrap: wrap; } .hero, .grid { grid-template-columns: 1fr; } .hero { padding-top: 35px; } .hero-art { min-height: 260px; } .hero h2 { font-size: 45px; } footer { flex-direction: column; gap: 10px; } }
